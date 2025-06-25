@@ -32,7 +32,9 @@ stripe==7.8.0
 loguru==0.7.2
 
 # Data Processing
-numpy==1.25.2
+pandas==2.1.4
+numpy==1.26.4
+
 
 # Async & Concurrency
 asyncio-throttle==1.0.2
