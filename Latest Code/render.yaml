@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: sneakerdropbot
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: python main_render.py
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      - key: ENABLE_SCRAPING
+        value: false
+      - key: ENABLE_PREMIUM
+        value: true
+      - key: ENABLE_ANALYTICS
+        value: true
+      - key: MONGODB_DATABASE
+        value: sneakerdropbot
+      # The following environment variables need to be set manually in Render dashboard:
+      # - TELEGRAM_BOT_TOKEN (required)
+      # - MONGODB_URI (required - MongoDB Atlas connection string)
+      # - STRIPE_SECRET_KEY (optional - for payments)
+      # - STRIPE_PUBLISHABLE_KEY (optional - for payments)
+      # - ADMIN_TELEGRAM_CHAT_ID (optional - for admin alerts)

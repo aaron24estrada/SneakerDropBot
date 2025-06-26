@@ -1,0 +1,56 @@
+# Render.com optimized requirements with lightweight scraping
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Telegram Bot (Essential)
+python-telegram-bot==20.7
+
+# Database (Essential)
+motor==3.3.2
+pymongo==4.6.0
+
+# HTTP Requests & Scraping (Essential for bot functionality)
+aiohttp==3.9.1
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Scraping utilities (lightweight)
+fake-useragent==1.4.0
+
+# Logging & Monitoring
+loguru==0.7.2
+
+# Async & Concurrency
+aiofiles==23.2.1
+asyncio-throttle==1.0.2
+
+# Environment & Configuration
+python-dotenv==1.0.0
+
+# Date & Time
+python-dateutil==2.8.2
+
+# Payment Processing (Essential for monetization)
+stripe==7.8.0
+
+# JSON & Data Serialization
+orjson==3.9.10
+
+# HTTP Client with retry logic
+tenacity==8.2.3
+
+# Basic utilities
+click==8.1.7
+
+# Deployment
+gunicorn==21.2.0
+
+# Image processing (lightweight)
+Pillow==10.1.0
+
+# Additional scraping support
+httpx==0.25.2
